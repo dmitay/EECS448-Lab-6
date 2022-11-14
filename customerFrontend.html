@@ -1,0 +1,49 @@
+<html> 
+    <head> 
+
+        <script type="text/javascript" src="formChecker.js"> 
+        </script>
+
+    <link href="style.css" 
+    rel="stylesheet" 
+    type="text/css"/> 
+
+
+
+    <h2>Welcome to the Lightsaber Store</h2>
+    
+        <form  id = "myForm" onsubmit="return submited()" action="customerBackend.php" method="post">
+            <!--Username and password -->
+            <label for="username">Username</label><br />
+            <input type="username" id="username" name="username"><br />
+
+            <label for="password">Password</label><br />
+            <input type="password" id="password" name="password"><br /> <br>
+
+            <!--Counters for items -->
+            <input id="demoInput" name="purpleSaber" type=number min=0 max=100> 
+              Purple Lightsaber ($150)<br> 
+        
+            <input id="demoInput1" name="redSaber" type=number min=0 max=100> 
+              Red Lightsaber ($200)<br>
+        
+            <input id="demoInput2" name="blueSaber" type=number min=0 max=100>
+              Blue Lightsaber ($100)<br>
+
+            <!--Shipping Options -->
+            <br>Please Choose a shipping option: <br>
+            <input type="radio" name="shipping_option" value="seven_day">Free seven day<br>
+            <input type="radio" name="shipping_option" value="over_night">$50 over night<br>
+            <input type="radio" name="shipping_option" value="three_day">$5 three day<br>
+
+            <!--Submit and Reset buttons -->
+            <input type="submit" value = "Submit">
+            <input type = "button" value = "Reset data" onClick = "reset_page()"/>
+    
+        </form>
+
+       
+
+        
+ 
+    </head> 
